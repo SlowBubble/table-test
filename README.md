@@ -3,13 +3,17 @@
 
 `table-test` is a library inspired by Golang's data-driven, table-driven testing:
 
-* Just specify the data you want to compare for each test case, and call the main library function `runTest` using the test cases.
+* Create test cases, each with a name and an output that you want to verify, and call the main library function `runTest` using the test cases.
   - `runTest` will display a summary of the results in the console for Node.js and in the browser for frontend javascript.
-* If the function under testing is implemented correctly, the library will auto-generate the expected JSON for the test case.
-  - For frontend javascript, the auto-generated test code link is in the test report; all you need to do is copy-paste the code.
-  - For Node.js, the test code (e.g. allTests.js) can be updated via the `autofix.js` script:
-    + `node allTests.js | npx @clubfest/table-test`
+
 ![](browser.png)
+
+* A test case can be fixed automatically if you are using JSON for the expected value (and obviously, the function under testing needs to be implemented correctly).
+  - For frontend javascript, the auto-generated test code link is in the test report; all you need to do is copy-paste the code.
+  - For Node.js, the test code (e.g. allTests.js) can be updated automatically by piping the test output to `npx @clubfest/table-test`:
+    + `node allTests.js | npx @clubfest/table-test`
+
+![](quickFix.png)
 
 # Real-life example
 
@@ -113,7 +117,10 @@ Caveat:
 
   ![](quickFix.png)
 
-# Another long example in both Node.js and the browser.
+# Demo of test case features
+
+Demo: [https://slowbubble.github.io/table-test/](https://slowbubble.github.io/table-test/)
+
 First, install the package as a dev dependency (or copy the repo into your project):
 ```
 $ npm i --save-dev @clubfest/table-test
@@ -215,8 +222,6 @@ runTest({testName: 'table-test test', testCases: [
 ```
 
 To run the tests in the browser, just import the script that contains the `runTest` call in the html page:
-
-Demo: [https://slowbubble.github.io/table-test/](https://slowbubble.github.io/table-test/)
 
 index.html:
 ```html
