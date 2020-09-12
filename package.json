@@ -1,6 +1,6 @@
 {
   "name": "@clubfest/table-test",
-  "version": "0.6.12",
+  "version": "0.6.13",
   "description": "A library to help with writing table-driven tests for ES modules.",
   "main": "index.js",
   "bin": {

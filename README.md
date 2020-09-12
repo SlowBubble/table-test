@@ -83,7 +83,7 @@
 - To autofix the test, assuming that the implementation is correct, i.e. the `got` values are as expected, run this:
 
   ```
-  $ node fracTest.js | node ./node_modules/\@clubfest/table-test/autofix.js 
+  $ node fracTest.js | npx @clubfest/table-test 
   🔧🔧 file:///.../fracTest.js has been autofixed!
   ```
 
