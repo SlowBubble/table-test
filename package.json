@@ -1,0 +1,30 @@
+{
+  "name": "@clubfest/table-test",
+  "version": "0.6.12",
+  "description": "A library to help with writing table-driven tests for ES modules.",
+  "main": "index.js",
+  "bin": {
+    "@clubfest/table-test": "./autofix.js"
+  },
+  "scripts": {
+    "test": "node allTests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SlowBubble/table-test.git"
+  },
+  "keywords": [
+    "es",
+    "es6",
+    "testing",
+    "table-driven",
+    "testing"
+  ],
+  "type": "module",
+  "author": "clubfest",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SlowBubble/table-test/issues"
+  },
+  "homepage": "https://github.com/SlowBubble/table-test#readme"
+}
